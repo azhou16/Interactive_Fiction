@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Fiction</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="player_inventory">
+  <span class="item-container"><h3>Inventory:</h3>
+    <div class="inventory-box empty"></div>
+  
+  </span>
+</div>
+<div id="steps-taken">
+  <h3>Steps Taken:</h3>
+  <ul id='steps'>
+  </ul>
+</div>
+
+<div id="impress">
+    <div id="slide1" class="step slide">
+      <div class="slide-text">
+        <p>Steve Jobs is the CEO Apple Inc. He is a very powerful and wealthy man, so everyone wants to eliminate him from society.</p>
+        <p><a href='#slide2'>Tim Cook</a> is the COO of Apple. Click his name to view him.</p>
+        <div class="event-text"></div>
+     </div>
+     <div class="menu item-container"><div class="inventory-box"><img src="bat.png" alt="bat" class="item" id="bat"></div></div>
+    </div>
+    <div id="slide2" class="step slide" data-x="1500">
+      <div class="slide-text">
+        <p>Tim Cook hates Steve Jobs. Drag Tim Cook over Steve Jobs to eliminate him.</p>
+		 <p><a href='#slide3'>Click</a> to see what happens next.</p>
+        <div class="event-text"></div>
+      </div>
+      <div class="menu"><div class="inventory-box"><img src="dino.png" alt="dino" class="item" id="dino"></div></div>
+    </div
+	  
+	 <div id="slide3" class="step slide" data-x="-1500">
+	 <div id="slide3" class="step slide" data-x="-1500">
+      <div class="slide-text">
+        <p>Tim Cook now runs Apple.</p>
+        <div class="event-text"></div>
+     </div>
+     <div class="menu item-container"><div class="inventory-box"><img src="tim_cook_Steve_jobs[1].png" alt="Tim Steve" class="item" id="CookJobs"></div></div>
+    </div>
+</div>
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+<script src="jquery.raptorize.1.0.js"></script>
+
+<script src="game.js"></script>
+<script src="dragDrop.js"></script>
+
+</body>
+</html>
